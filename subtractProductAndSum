@@ -1,0 +1,11 @@
+class Solution {
+    public int subtractProductAndSum(int n) {
+        int p=1,s=0;
+        String a=String.valueOf(n);
+        for(int i=0;i<a.length();i++){
+            int x=Integer.parseInt(String.valueOf(a.charAt(i)));
+            p*=x;s+=x;
+        }
+        return p-s;
+    }
+}
